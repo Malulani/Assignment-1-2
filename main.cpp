@@ -4,27 +4,13 @@ using namespace std;
 
 int main()
 {
-  const int rateA = 15.00;
-  const int rateB = 12.00;
-  const int rateC =9.00;
+  double Celsius, Farenheit;
 
-  int seatA;
-  int seatB;
-  int seatC;
+  cout << "Enter temp. by celsius\n";
+  cin >> Celsius;
 
-  cin >> seatA >> seatB >> seatC;
+  Farenheit = 9/5.0 * Celsius + 32;
 
-  double totalA;
-  double totalB;
-  double totalC;
-  double total_amount;
-
-  totalA = seatA * rateA;
-  totalB = seatB * rateB;
-  totalC = seatC * rateC;
-
-  total_amount = totalA + totalB + totalC;
-
-  cout << total_amount <<endl;
+  cout << Celsius << "Celsius is" << Farenheit << "Farenheit\n";
 }
  
